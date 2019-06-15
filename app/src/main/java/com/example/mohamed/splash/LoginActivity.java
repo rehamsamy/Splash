@@ -8,18 +8,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class LoginActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    TextView sign_up;
-    TextView forget_password;
-    Button sign_in;
+
+
+    @BindView(R.id.sign_up) TextView sign_up;
+    @BindView(R.id.forget_password) TextView forget_password;
+    @BindView(R.id.sign_in) Button sign_in;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        forget_password=(TextView) findViewById(R.id.forget_password);
-        sign_in=(Button) findViewById(R.id.sign_in);
+
+        ButterKnife.bind(this);
 //        toolbar=(Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setTitle("Sign Up");

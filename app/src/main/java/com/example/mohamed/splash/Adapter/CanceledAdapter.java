@@ -68,13 +68,6 @@ public class CanceledAdapter  extends RecyclerView.Adapter<CanceledAdapter.Holde
         });
 
 
-
-
-
-
-
-
-
     }
 
     @Override

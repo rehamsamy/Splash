@@ -45,4 +45,16 @@
     <string name="cancel_service">Cancel Service</string>
     <string name="end_service">End Service</string>
     <string name="search">Search</string>
+    <string name="bank_name">Name of Bank</string>
+    <string name="bank_name_text">"Bank Name"</string>
+    <string name="card_number">Card Number:</string>
+    <string name="card_number_text">34976461287239948474646347</string>
+    <string name="expire_date">Expire Date:</string>
+    <string name="expire_date_text">05/21</string>
+    <string name="cvv">CVV:</string>
+    <string name="cardholder_name">Cardholder Name:</string>
+    <string name="cardholder_name_text">Jhon Daeo</string>
+    <string name="save_card_information">Save Card information</string>
+    <string name="cvv_text">123</string>
+    <string name="get_gift">Get Your Gift</string>
 </resources>

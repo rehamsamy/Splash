@@ -7,22 +7,27 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class SignUp2Activity extends AppCompatActivity {
 
-    Button continu;
-    Toolbar toolbar;
+
+    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.continu) Button continu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up2);
 
-        toolbar=(Toolbar) findViewById(R.id.toolbar);
+
+        ButterKnife.bind(this);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Sign Up");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        continu=(Button) findViewById(R.id.continu);
+
 
         continu.setOnClickListener(new View.OnClickListener() {
             @Override

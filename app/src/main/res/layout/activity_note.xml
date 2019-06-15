@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".popupActivityDetail.NoteActivity"
+    android:layout_margin="30dp"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/toolbar"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Notes about the provided service:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+       app:layout_constraintTop_toBottomOf="parent"
+         android:id="@+id/notes"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="20"
+        app:layout_constraintTop_toBottomOf="@+id/notes"
+        android:id="@+id/notes_text"
+        android:layout_marginTop="20sp"
+        android:hint="Write notes here .... "/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_top"
+        app:layout_constraintTop_toBottomOf="@+id/notes_text"
+        android:id="@+id/view"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_marginTop="@dimen/margin_top"
+    app:layout_constraintTop_toBottomOf="@+id/view"
+    android:id="@+id/notes_save"
+    android:text="Save"/>
+
+</android.support.constraint.ConstraintLayout>

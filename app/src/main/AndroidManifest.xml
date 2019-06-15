@@ -37,14 +37,29 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="API_KEY" />
 
-        <activity android:name=".ProfileActivity"
-            android:parentActivityName=".FindServiceActivity"/>
+        <activity
+            android:name=".sidemenuActivity.ProfileActivity"
+            android:parentActivityName=".FindServiceActivity" />
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".ChangePasswordActivity" />
-        <activity android:name=".HistoryActivity"
-            android:parentActivityName=".FindServiceActivity"/>
-        <activity android:name=".popupWindow.InProcessPopUpActivity"
-           ></activity>
+        <activity
+            android:name=".sidemenuActivity.HistoryActivity"
+            android:parentActivityName=".FindServiceActivity" />
+        <activity android:name=".popupWindow.InProcessPopUpActivity" />
+        <activity android:name=".popupActivityDetail.NoteActivity" />
+        <activity android:name=".popupActivityDetail.GiveBonusActivity" />
+        <activity android:name=".popupActivityDetail.ReportProblemActivity" />
+        <activity android:name=".CancelServiceActivity" />
+        <activity android:name=".sidemenuActivity.PaymentMethodActivity1" />
+        <activity android:name=".sidemenuActivity.PaymentMethodActivity2" />
+        <activity android:name=".sidemenuActivity.PaymentMethodActivity3" />
+        <activity android:name=".sidemenuActivity.ContactUsActivity" />
+        <activity android:name=".sidemenuActivity.PromoActivity" />
+        <activity android:name=".sidemenuActivity.ReviewsActivity" />
+        <activity android:name=".sidemenuActivity.AddReviewActivity" />
+        <activity android:name=".SelectServiceActivity" />
+        <activity android:name=".SelectServiceProviderActivity" />
+        <activity android:name=".ConfirmationActivity"></activity>
     </application>
 
 </manifest>

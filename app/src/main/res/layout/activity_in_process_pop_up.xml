@@ -145,7 +145,8 @@
                 android:text="@string/add_notes"
                 android:textAlignment="center"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="232dp" />
+                tools:layout_editor_absoluteY="232dp"
+               />
 
 
             <TextView

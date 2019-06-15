@@ -7,18 +7,19 @@ import android.support.v7.widget.Toolbar;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ForgetPasswordActivity extends AppCompatActivity {
+public class CancelServiceActivity extends AppCompatActivity {
 
    @BindView(R.id.toolbar) Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forget_password);
-
+        setContentView(R.layout.activity_cancel_service);
 
         ButterKnife.bind(this);
+
+
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Forget Password");
+        getSupportActionBar().setTitle("Cancel Service");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
