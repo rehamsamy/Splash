@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sidemenuActivity.ContactUsActivity"
+  >
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/toolbar"
+        ></include>
+    <TextView
+        android:layout_marginTop="60dp"
+        android:paddingLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Phone:"
+        android:drawableLeft="@drawable/signup_phone"
+        android:drawablePadding="15sp"
+        android:textColor="@color/black"
+        android:id="@+id/phone"
+
+        />
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="01146578999"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        android:drawablePadding="15sp"
+        android:id="@+id/phone_text"
+        />
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Address:"
+        app:layout_constraintTop_toBottomOf="@+id/phone_text"
+        android:drawableLeft="@drawable/map_address"
+        android:drawablePadding="15sp"
+        android:textColor="@color/black"
+        android:id="@+id/address"
+
+        />
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="Street,Area,Countery,City."
+        app:layout_constraintTop_toBottomOf="@+id/address"
+        android:drawablePadding="15sp"
+        android:id="@+id/address_text"
+        />
+
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:text="Website:"
+        app:layout_constraintTop_toBottomOf="@+id/address_text"
+        android:drawableLeft="@drawable/contact_web"
+        android:drawablePadding="15sp"
+        android:textColor="@color/black"
+        android:id="@+id/website"
+
+        />
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:text="www.company.com"
+        app:layout_constraintTop_toBottomOf="@+id/website"
+        android:drawablePadding="15sp"
+        android:id="@+id/website_text"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

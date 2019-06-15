@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmationActivity">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="parent"
+        />
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+     app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/state_progress"
+        app:spb_currentStateNumber="three"
+        app:spb_maxStateNumber="three"
+        />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_left"
+        android:background="@drawable/border"
+        android:padding="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/state_progress"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20sp"
+       >
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your location:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/map_address"
+            android:drawablePadding="15sp"
+            android:text="@string/location"
+            app:layout_constraintTop_toBottomOf="@id/location" />
+
+        <TextView
+            android:id="@+id/service_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/service_type"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/location_text" />
+
+        <TextView
+            android:id="@+id/service_type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/service_type"
+            android:drawablePadding="15sp"
+            android:text="@string/service_type_text"
+            app:layout_constraintTop_toBottomOf="@id/service_type" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.6sp"
+            android:layout_marginTop="@dimen/margin_left"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/service_type_text" />
+
+
+        <TextView
+            android:id="@+id/service_provider_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Provider Info:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+        <TextView
+
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginTop="20sp"
+            android:text="A.Ali"
+            app:layout_constraintTop_toBottomOf="@id/service_provider_info" />
+
+
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/service_provider_info">
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/add_review_not_select" />
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/add_review_not_select" />
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/add_review_not_select" />
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/add_review_not_select" />
+
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/add_review_not_select" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="10$/hour"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+        <TextView
+            android:id="@+id/arrival_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="10 minute to arrive"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/price" />
+
+
+        <ImageView
+            android:id="@+id/make_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_left"
+            android:layout_marginTop="40sp"
+            android:src="@drawable/make_call"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/root" />
+
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:text="Confirm Now"
+            app:layout_constraintTop_toBottomOf="@+id/make_call" />
+
+        <Button
+            android:id="@+id/scheduled_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left"
+            android:background="@color/colorPrimary"
+            android:text="Scheduled"
+            app:layout_constraintTop_toBottomOf="@+id/confirm_button" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_left"
+            android:background="@color/colorPrimary"
+            android:text="Confirm Now"
+            app:layout_constraintTop_toBottomOf="@+id/scheduled_button" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
